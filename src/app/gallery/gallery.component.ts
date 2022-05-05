@@ -9,6 +9,7 @@ export class GalleryComponent implements OnInit {
 
   name = 'Plants';
   type = 'vegetables';
+  photoCount = 0;
 
   getType() {
     return this.type;
@@ -16,6 +17,14 @@ export class GalleryComponent implements OnInit {
   constructor() { }
 
   ngOnInit(): void {
+  }
+
+  onAddPhoto() {
+    this.photoCount = this.photoCount + 1;
+  }
+
+  allowPhotoAddition() {
+    return this.photoCount < 10;
   }
 
 }

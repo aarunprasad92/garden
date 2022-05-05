@@ -1,1 +1,3 @@
 <p>This is {{ name }} gallery of type {{ getType() }}</p>
+<button [disabled]="!allowPhotoAddition()" (click)="onAddPhoto()">Add Photo</button>
+<p>Max 10 photos. Added {{ photoCount }}/10</p>
