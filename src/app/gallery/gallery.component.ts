@@ -7,6 +7,12 @@ import { Component, OnInit } from '@angular/core';
 })
 export class GalleryComponent implements OnInit {
 
+  name = 'Plants';
+  type = 'vegetables';
+
+  getType() {
+    return this.type;
+  }
   constructor() { }
 
   ngOnInit(): void {
