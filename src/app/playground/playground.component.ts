@@ -17,4 +17,8 @@ export class PlaygroundComponent implements OnInit {
   onUpdateName(event: Event) {
     this.name = (<HTMLInputElement>event.target).value;
   }
+
+  getColor() {
+    return this.name.startsWith('A') ? 'green' : 'red';
+  }
 }

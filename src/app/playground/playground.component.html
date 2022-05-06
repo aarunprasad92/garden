@@ -3,7 +3,7 @@
 <p [innerText]="name"></p>
 
 <p>Two way binding</p>
-<input type="text" class="form-control" [(ngModel)]="name">
+<input [ngStyle]="{backgroundColor: getColor()}" type="text" class="form-control" [(ngModel)]="name">
 <p [innerText]="name"></p>
 
 <p>Display text only if starts with A</p>
