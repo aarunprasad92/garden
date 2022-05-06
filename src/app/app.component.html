@@ -6,6 +6,6 @@
   <button mat-button routerLink="/about">About</button></mat-toolbar><router-outlet></router-outlet>
 
   <hr>
-  <app-gallery></app-gallery>
+  <app-gallery *ngFor="let gallery of galleries"></app-gallery>
   <hr>
   <app-playground></app-playground>
