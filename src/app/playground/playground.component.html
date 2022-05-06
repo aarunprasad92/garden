@@ -1,3 +1,7 @@
 <p>playground works!</p>
 <input type="text" class="form-control" (input)="onUpdateName($event)">
 <p [innerText]="name"></p>
+
+<p>Two way binding</p>
+<input type="text" class="form-control" [(ngModel)]="name">
+<p [innerText]="name"></p>

@@ -7,7 +7,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class PlaygroundComponent implements OnInit {
 
-  name = '';
+  name = 'default name';
 
   constructor() { }
 
