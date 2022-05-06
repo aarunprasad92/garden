@@ -7,4 +7,7 @@
 <p [innerText]="name"></p>
 
 <p>Display text only if starts with A</p>
-<p *ngIf="name.startsWith('A')">{{ name }}</p>
+<p *ngIf="name.startsWith('A'); else nameNotStartingWithA">{{ name }}</p>
+<ng-template #nameNotStartingWithA>
+    <p>Name did not start with A. Hence not displaying</p>
+</ng-template>
