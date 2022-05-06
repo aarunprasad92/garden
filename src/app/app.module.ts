@@ -13,13 +13,15 @@ import { MatCardModule } from '@angular/material/card';
 import { MatButtonModule } from '@angular/material/button';
 import { MatProgressSpinnerModule } from '@angular/material/progress-spinner';
 import { GalleryComponent } from './gallery/gallery.component';
+import { PlaygroundComponent } from './playground/playground.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     HomeComponent,
     AboutComponent,
-    GalleryComponent
+    GalleryComponent,
+    PlaygroundComponent
   ],
   imports: [
     BrowserModule,
