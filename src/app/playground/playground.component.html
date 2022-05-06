@@ -3,8 +3,13 @@
 <p [innerText]="name"></p>
 
 <p>Two way binding</p>
-<input [ngStyle]="{backgroundColor: getColor()}" type="text" class="form-control" [(ngModel)]="name">
-<p [innerText]="name"></p>
+<input 
+    [ngStyle]="{backgroundColor: getColor()}"
+    type="text" 
+    class="form-control" 
+    [(ngModel)]="name">
+<p [innerText]="name"
+[ngClass]="{'valid-name': name.startsWith('A')}"></p>
 
 <p>Display text only if starts with A</p>
 <p *ngIf="name.startsWith('A'); else nameNotStartingWithA">{{ name }}</p>
